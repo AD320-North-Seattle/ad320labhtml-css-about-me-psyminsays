@@ -5,54 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psy Cisneros</title>
     <style>
-        * {
+        body {
             font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        #psy-cisneros {
-            background-image: linear-gradient(to right, red, blue);
-            padding: 10px;
-            color: white;
             margin: 0;
+            padding: 0;
+            line-height: 1.6;
         }
         
-        .cat-image {
-            width: 500px;
-            height: 300px;
-            display: block;
-            margin: 10px 0;
-        }
-        
-        p {
-            font-size: 15pt;
-            line-height: 1.4;
-        }
-        
-        .container {
+        #main-container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
+        
+        #page-title {
+            background-image: linear-gradient(to right, red, blue);
+            padding: 15px;
+            color: white;
+            margin: 0 0 20px 0;
+            text-align: center;
+        }
+        
+        .cat-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        
+        .intro-text {
+            font-size: 15pt;
+            margin-bottom: 15px;
+        }
+        
+        #hobbies-section {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        
+        @media (max-width: 600px) {
+            #main-container {
+                padding: 10px;
+            }
+            
+            .intro-text {
+                font-size: 14pt;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2 id="psy-cisneros">Psy Cisneros</h2>
+    <div id="main-container">
+        <h2 id="page-title">Psy Cisneros</h2>
         
-        <a href="https://www.thesprucepets.com/bombay-cat-full-profile-history-and-care-5202250">
+        <a href="https://www.thesprucepets.com/bombay-cat-full-profile-history-and-care-5202250" id="cat-image-link">
             <img class="cat-image" src="https://i.postimg.cc/jSyP5VP5/dsc-0678.jpg" 
-                 alt="A picture of a black cat, specifically a Bombay. This is Psy's cat. Click the image to learn more about the bombay cat breed.">
+                 alt="A picture of a black Bombay cat belonging to Psy Cisneros">
         </a>
         
-        <p><em>I am a photographer, computer scientist, and a food lover.</em></p>
-        <p>My favorite food of all time is coffee and coffee cake - did you know that coffee cake has no coffee in it?</p>
+        <p class="intro-text"><em>I am a photographer, computer scientist, and a food lover.</em></p>
+        <p class="intro-text">My favorite food of all time is coffee and coffee cake - did you know that coffee cake has no coffee in it?</p>
         
-        <h3>Three hobbies of mine:</h3>
-        <ul>
-            <li>Dancing</li>
-            <li>Bird-watching</li>
-            <li>Baking</li>
+        <h3 id="hobbies-title">Three hobbies of mine:</h3>
+        <ul id="hobbies-section">
+            <li class="hobby-item">Dancing</li>
+            <li class="hobby-item">Bird-watching</li>
+            <li class="hobby-item">Baking</li>
         </ul>
     </div>
 </body>
 </html>
+
